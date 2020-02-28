@@ -2,18 +2,36 @@
   "title": "My First Scenario",
   "description": "My First Interactive Scenario",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "2 minutes",
   "details": {
-    "steps": [],
+    "steps": [{
+      "title": "Step 1",
+      "text": "step1.md"
+    }],
     "intro": {
       "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "client.txt",
+          "target": "~/"
+        }
+      ],
+      "host01": [
+        {
+          "file": "host01.txt",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uisettings": "csharp"
   },
   "backend": {
     "imageid": "dotnet"
